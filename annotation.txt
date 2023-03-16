@@ -1,0 +1,11 @@
+npm init -y
+npm i typescript @types/node tsx tsup -D
+npx tsc --init    =>  no tsconfig.json -> "target": "ES2020",   
+
+npm i fastify
+
+criar o App em dois arquivos app e server, futuramente será utilizando nos testes;
+
+scripts package.json
+
+criar arquivo .npmrc   => para que quando vc rodar o npm i ele fixa a versao dos pacotes.

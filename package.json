@@ -1,0 +1,23 @@
+{
+  "name": "03-api-solid",
+  "version": "1.0.0",
+  "description": "Gympass style app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "18.15.3",
+    "tsup": "6.6.3",
+    "tsx": "3.12.5",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "fastify": "4.14.1"
+  }
+}
