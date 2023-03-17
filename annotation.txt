@@ -3,9 +3,64 @@ npm i typescript @types/node tsx tsup -D
 npx tsc --init    =>  no tsconfig.json -> "target": "ES2020",   
 
 npm i fastify
-
 criar o App em dois arquivos app e server, futuramente será utilizando nos testes;
 
 scripts package.json
-
 criar arquivo .npmrc   => para que quando vc rodar o npm i ele fixa a versao dos pacotes.
+
+criar variavel ambiente -> arquivo  .env
+npm i dotenv
+
+criar pasta env
+npm i eslint @rocketseat/eslint-config -D
+
+criar arquivo .eslintrc.json
+criar arquivo .prettierrc.json
+criar arquivo .eslintignore
+
+no arquivo tsconfig.json -> 
+    "baseUrl": "./",
+     "paths": {
+      "@/*": ["./src/*"]
+     }, 
+
+nessas duas opções acima conseguimo definir os alias.
+
+npm i prisma -D
+npx prisma init -> cria o arquivo schemaprisma
+
+npx prisma generate -> cria a tipagem das tabelas
+npm i @prisma/client
+
+apos instalar o docker rodar o comando abaixo para subir a imagem no docker ja com um usuario criado. neste caso o usuario é o "docker"
+docker ps -a   ===> lista todos os containers
+docker start + nome ou id;
+docker stop + nome ou id;
+docker rm + nome ou id; remover
+docker logs -f ===> -f mantem o log aberto
+
+
+docker run --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5433:5432 bitnami/postgresql
+
+com o banco online
+
+npx prisma migrate dev   => gerar o que precisa no nosso banco de dados
+
+criar arquivo docker-compose.yml apos a criação do arquivo.... executar o comando abaixo para subir as imagens.
+
+docker compose up -d    => monta todos os serviços da aplicação.
+docker compose stop     => stopa o container.
+docker compose down     => deleta os containers, apaga todas as informações.
+
+npm i bcryptjs                      => biblioteca para hash de senha
+npm i --save-dev @types/bcryptjs    => tipos typescript
+
+
+
+Design patthens => Centralizar ações. se eu crio algo pego rota, caso eu preciso criar a mesma coisa por um outro lugar. a criação desta coisa precisa estar em um local isolado.
+
+1 - repository patterns      => Consiste em criar uma classe por tabela e dentro desta classe ter as ações que serao feitas naquela tabela...Insert, updates, selects, deletes e .....
+
+Principios SOLID 
+
+1 - Dependency Inversion Principle - Interface - contratos
