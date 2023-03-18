@@ -6,8 +6,8 @@ Gympass style app
 -   [x] =>  Deve ser possível se cadastrar;
 -   [x] =>  Deve ser possível se autenticar;
 -   [x] =>  Deve ser possível obter o perfil de um usuário logado;
--   [ ] =>  Deve ser possível obter o numero de checkins realizados pelo usuário logado;
--   [ ] =>  Deve ser possível obter seu historico de checkins;
+-   [x] =>  Deve ser possível obter o numero de checkins realizados pelo usuário logado;
+-   [x] =>  Deve ser possível obter seu historico de checkins;
 -   [ ] =>  Deve ser possível o usuário buscar academias proximas;
 -   [ ] =>  Deve ser possível o usuário buscar academias pelo nome;
 -   [x] =>  Deve ser possível o usuario realizar checkin em uma academia;
@@ -25,5 +25,5 @@ Gympass style app
 ## RNFs (Requisitos não-funcionais)
 -   [x] =>  A senha do usuario precisa estar criptografada;
 -   [x] =>  os dados da aplicação precisam estar persistido em um banco postgreSql;
--   [ ] =>  todas as listas de dados precisam estar paginadas com 20 itens por pagina;
+-   [x] =>  todas as listas de dados precisam estar paginadas com 20 itens por pagina;
 -   [ ] =>  o usuario deve ser identificado por um JWT(JSON Web Token);
