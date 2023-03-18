@@ -57,10 +57,38 @@ npm i --save-dev @types/bcryptjs    => tipos typescript
 
 
 
-Design patthens => Centralizar ações. se eu crio algo pego rota, caso eu preciso criar a mesma coisa por um outro lugar. a criação desta coisa precisa estar em um local isolado.
+Design patterns => Centralizar ações. se eu crio algo pego rota, caso eu preciso criar a mesma coisa por um outro lugar. a criação desta coisa precisa estar em um local isolado.
 
 1 - repository patterns      => Consiste em criar uma classe por tabela e dentro desta classe ter as ações que serao feitas naquela tabela...Insert, updates, selects, deletes e .....
 
 Principios SOLID 
 
 1 - Dependency Inversion Principle - Interface - contratos
+
+
+INICIANDO TESTES
+npm i vitest vite-tsconfig-paths -D 
+criar arquivo vite.config.ts
+
+npm run test:coverage => relatorios de todos os arquivos do sistema e destaca quais e quantas vezes cada linha foi testada.
+
+npm i @vitest/ui -D => igual coverage porem em UI.
+
+Fluxo de criação de uma funcionalidade
+1 - usecase
+2 - error handling
+3 - teste unitario
+4 - camada externa
+
+factory patterns
+criação da pasta factories dentro do usecase
+
+
+TDD => Test driven development -> Desenvolvimento dirigido a teste.
+
+// red - primeiro estado => assim que a gente cria nosso teste sem a funcionalidade estar implementada.
+// green - codar o minimo necessario para o teste passar
+// refactor - desenvolver o usecase.
+
+
+npm i dayjs         => trabalhar com datas.
