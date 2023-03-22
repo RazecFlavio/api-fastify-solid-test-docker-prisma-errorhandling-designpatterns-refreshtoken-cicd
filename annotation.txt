@@ -109,3 +109,8 @@ na pasta raiz do projeto digita :===>  npm link vitest-environment-prisma
 npm i --save-dev npm-run-all
 
 para criar os scripts no arquivo package.json
+
+
+inicinaod E2E ==> biblioteca para realizar solicitações http sem precisar subir a aplicação.
+npm i supertest -D
+npm i @types/supertest -D
