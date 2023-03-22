@@ -114,3 +114,9 @@ para criar os scripts no arquivo package.json
 inicinaod E2E ==> biblioteca para realizar solicitações http sem precisar subir a aplicação.
 npm i supertest -D
 npm i @types/supertest -D
+
+
+aplicando refreshToken
+npm i @fastify/cookie
+
+adicionar no app.ts o register do fastifycookie
