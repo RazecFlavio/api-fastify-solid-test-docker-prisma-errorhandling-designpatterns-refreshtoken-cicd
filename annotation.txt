@@ -98,17 +98,11 @@ token jwt -> composto por 3 coisas -> header, payload, signature
 criar arquivo fastify-jwt.d.ts
 
 criar dentro da pasta prisma vitest-environment-prisma
-
-criar atributo test no arquivo vite.config.ts
-
-
-dentro da pasta: prisma\vitest-environment-prisma digita =>>>>> npm link
-
-
-na pasta raiz do projeto digita :===>  npm link vitest-environment-prisma
+    criar atributo test no arquivo vite.config.ts
+    dentro da pasta: prisma\vitest-environment-prisma digita =>>>>> npm link
+    na pasta raiz do projeto digita :===>  npm link vitest-environment-prisma
 npm i --save-dev npm-run-all
-
-para criar os scripts no arquivo package.json
+    para criar os scripts no arquivo package.json
 
 
 inicinaod E2E ==> biblioteca para realizar solicitações http sem precisar subir a aplicação.
