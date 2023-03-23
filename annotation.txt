@@ -119,5 +119,6 @@ adicionar no app.ts o register do fastifycookie
 CI - continuous Integration
 - ferramenta Github actions
 
+criar pasta .Github/wrokflows e os arquivos
 
 CD - continuous Delivery/Deployment
